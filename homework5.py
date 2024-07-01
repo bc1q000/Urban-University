@@ -1,4 +1,6 @@
 # homework5
+
+# КОРТЕЖИ
 immutable_var = 1, 2.2, 'Python', True, [1, 2], (1, 2)
 print(immutable_var)
 # immutable_var[0] = 2
@@ -9,3 +11,15 @@ immutable_var[4][0] = 5.5       # Беру 5 элемент "список" и и
 print(immutable_var)
 immutable_var[4][1] = 'Python'      # Так же список поддерживает множество изменяемых типов данных
 print(immutable_var)
+
+
+# СПИСКИ
+mutable_list = immutable_var[4]
+print(mutable_list)
+mutable_list.append(True)   # Поддерживает добавление лишь одного аргумента
+mutable_list.extend(['Urban', 4])
+print(mutable_list)
+
+mutable_list.append(['список в список?', 4])
+print(mutable_list)
+print(type(mutable_list[5]))    # Есть ли практическое применение этому?
