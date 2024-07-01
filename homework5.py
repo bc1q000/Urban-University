@@ -20,6 +20,7 @@ mutable_list.append(True)   # Поддерживает добавление ли
 mutable_list.extend(['Urban', 4])
 print(mutable_list)
 
+# Вопрос
 mutable_list.append(['список в список?', 4])
 print(mutable_list)
 print(type(mutable_list[5]))    # Есть ли практическое применение этому?
