@@ -10,8 +10,19 @@ def password():
     print(stone_slot[0], ':', sep='', end=' ')
     for item in stone_slot[1]:
         print(item, end='')
+    print(f'\n')
+    stone_slot[0] = '*'
+    stone_slot[1] = []
 
+
+# 1я реализация программы
 stone_slot = ['*', []]                        # Две каменные вставки для чисел. 2я - обязательно "список"
 stone_slot[0] = random.randint(3, 20)   # Изменение 1-го слота
 
+password()
+
+
+# 2я реализация программы
+print(f'Если перед путешественниками выпадет \nчисло от 3 до 20 по нашему выбору.')
+stone_slot[0] = int(input('Введите число: '))
 password()
