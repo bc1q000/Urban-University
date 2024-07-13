@@ -11,7 +11,7 @@ def password():
     for item in stone_slot[1]:
         print(item, end='')
     print(f'\n')
-    stone_slot[0] = '*'
+    stone_slot[0] = '*'                       # Для того, чтобы обнулить значения при выполнении функции
     stone_slot[1] = []
 
 
@@ -25,4 +25,7 @@ password()
 # 2я реализация программы
 print(f'Если перед путешественниками выпадет \nчисло от 3 до 20 по нашему выбору.')
 stone_slot[0] = int(input('Введите число: '))
-password()
+if 3 <= stone_slot[0] <= 20:
+    password()
+else:
+    print('Вводимый диапозон значений неверный')
