@@ -15,7 +15,6 @@ class Guest(Thread):
         self.name = name
 
     def run(self):
-        # Симулируем ожидание от 3 до 10 секунд
         time.sleep(random.randint(3, 10))
 
 class Cafe:
